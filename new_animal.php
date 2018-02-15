@@ -41,7 +41,7 @@ if (isset($_GET['new_type_id']) && strlen((string)($_GET['new_type_id'])) > 0 &&
     if (strlen((string)($_GET['new_name'])) > 0 && strlen((string)($_GET['new_weight'])) > 0 && strlen((string)($_GET['new_birth_day'])) > 0) {
         $c->execute(("INSERT INTO `project2`.`animals` (`type_id`, `name`, `weight`, `birth_date`) VALUES ('" . $c->escape((string)$_GET['new_type_id']) . "', '" . $c->escape((string)$_GET['new_name']) . "', '" . (string)$_GET['new_weight'] . "', '" . (string)$_GET['new_birth_day'] . "' )"));
         //mysqli_query($link,$insert);
-        header('Location: index.php');  // перенаправление на нужную страницу
+        header('Location: index.php');  // перенаправление на нужную страницу :)
         exit();
     }
 }
