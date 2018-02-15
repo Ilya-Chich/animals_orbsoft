@@ -79,7 +79,7 @@ for ($i = 0; $i < count($data); $i++) {
     echo '<tr>';
     echo "<td><a href='correct.php?id=" . htmlentities($data[$i]['id']) . "'   >" . htmlentities($data[$i]['id']) . "</a></td>";
     echo '<td>' . htmlentities($data[$i]['type']) . '</td>';
-    echo '<td>' . htmlentities($data[$i]['name']) . '</td>';
+    echo "<td><a href='animalFood.php?id=" . htmlentities($data[$i]['id']) . "'   >" . htmlentities($data[$i]['name']) . "</a></td>";
     echo '<td>' . htmlentities($data[$i]['weight']) . '</td>';
     echo '<td>' . htmlentities($data[$i]['birth_date']) . '</td>';
 //    echo "<td><button type='submit' ><a href='delete.php?id=".$data[$i]['id']."'> delete </a></button></td>";

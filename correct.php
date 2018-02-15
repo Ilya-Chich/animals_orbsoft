@@ -2,7 +2,7 @@
 include('MySQLConnection.php');
 $c = MySQLConnection::getInstance();
 //MySQLConnection("127.0.0.1", "root", "","project2");
-$id = 1;
+$id = $_GET['id'];
 if (isset($_GET['id'])) {
     $id = (string)$_POST['id'];
 }
